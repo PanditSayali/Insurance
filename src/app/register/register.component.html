@@ -1,0 +1,238 @@
+<!-- ======= Breadcrumbs ======= -->
+<div class="breadcrumbs d-flex align-items-center" style="background-image: url('https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/09/macbook-with-opened-website-1.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5');">
+    <div class="container position-relative d-flex flex-column align-items-center">
+        <h2>Registration</h2>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Registration</li>
+        </ol>
+    </div>
+</div><!-- End Breadcrumbs -->
+<!-- 
+<!-- 
+<section id="register" class="register d-flex align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="register-form bg-light p-4">
+                    <h2 class="text-center mb-4">Registration</h2>
+                    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                        <div class="mb-3 mt-4">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" formControlName="name" placeholder="Enter your Name">
+                            <div *ngIf="submitted && registerForm.controls.name.errors">
+                                <small class="text-danger" *ngIf="registerForm.controls.name.errors.required">Name is required</small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter a valid email address">
+                            <div *ngIf="submitted && registerForm.controls.email.errors">
+                                <small class="text-danger" *ngIf="registerForm.controls.email.errors.required">Email is required</small>
+                                <small class="text-danger" *ngIf="registerForm.controls.email.errors.email">Email is invalid</small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" formControlName="password" placeholder="Password">
+                            <div *ngIf="submitted && registerForm.controls.password.errors">
+                                <small class="text-danger" *ngIf="registerForm.controls.password.errors.required">Password is required</small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control"  maxlength="10" id="phone" formControlName="phone" placeholder="Enter your phone">
+                            <div *ngIf="submitted && registerForm.controls.phone.errors">
+                                <small class="text-danger" *ngIf="registerForm.controls.phone.errors.required">Phone number is required</small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="adhar" class="form-label">Adhar Card</label>
+                            <input type="text" class="form-control" id="adhar" formControlName="adhar" placeholder="Enter your Adhar No">
+                            <div *ngIf="submitted && registerForm.controls.adhar.errors">
+                                <small class="text-danger" *ngIf="registerForm.controls.adhar.errors.required">Adhar number is required</small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pancard" class="form-label">Pancard No</label>
+                            <input type="text" class="form-control" id="pancard" formControlName="pancard" placeholder="Enter your Pan No">
+                            <div *ngIf="submitted && registerForm.controls.pancard.errors">
+                                <small class="text-danger" *ngIf="registerForm.controls.pancard.errors.required">Pan card number is required</small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="file" class="form-label">File</label>
+                            <input type="file" class="form-control" id="file" accept=".jpg,.png,.pdf">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="terms" formControlName="terms">
+                            <label class="form-check-label" for="terms">I accept the Terms of Service</label>
+                            <div *ngIf="submitted && registerForm.controls.terms.errors">
+                                <small class="text-danger" *ngIf="registerForm.controls.terms.errors.required">You must accept the terms</small>
+                            </div>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </div>
+                        <div class="text-center mt-3">
+                            <p>Already have an account? <a routerLink]="/login">Login Now</a></p>
+                            <p><a [routerLink]="/admin">admin</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- <section id="register" class="register d-flex align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="register-form bg-light p-4">
+                    <h2 class="text-center mb-4">Registration</h2>
+                    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                        <div class="mb-3 mt-4">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" formControlName="name" placeholder="Enter your Name">
+                            <div *ngIf="submitted && registerForm.controls.name.errors">
+                                <small class="text-danger" *ngIf="registerForm.controls.name.errors.required">Name is required</small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter a valid email address">
+                            <div *ngIf="submitted && registerForm.controls.email.errors">
+                                <small class="text-danger" *ngIf="registerForm.controls.email.errors.required">Email is required</small>
+                                <small class="text-danger" *ngIf="registerForm.controls.email.errors.email">Email is invalid</small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" formControlName="password" placeholder="Password">
+                            <div *ngIf="submitted && registerForm.controls.password.errors">
+                                <small class="text-danger" *ngIf="registerForm.controls.password.errors.required">Password is required</small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone" formControlName="phone" placeholder="Enter your phone">
+                            <div *ngIf="submitted && registerForm.controls.phone.errors">
+                                <small class="text-danger" *ngIf="registerForm.controls.phone.errors.required">Phone number is required</small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="adhar" class="form-label">Adhar Card</label>
+                            <input type="text" class="form-control" id="adhar" formControlName="adhar" placeholder="Enter your Adhar No">
+                            <div *ngIf="submitted && registerForm.controls.adhar.errors">
+                                <small class="text-danger" *ngIf="registerForm.controls.adhar.errors.required">Adhar number is required</small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pancard" class="form-label">Pancard No</label>
+                            <input type="text" class="form-control" id="pancard" formControlName="pancard" placeholder="Enter your Pan No">
+                            <div *ngIf="submitted && registerForm.controls.pancard.errors">
+                                <small class="text-danger" *ngIf="registerForm.controls.pancard.errors.required">Pan card number is required</small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="file" class="form-label">File</label>
+                            <input type="file" class="form-control" id="file" formControlName="file" accept=".jpg,.png,.pdf">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="terms" formControlName="terms">
+                            <label class="form-check-label" for="terms">I accept the Terms of Service</label>
+                            <div *ngIf="submitted && registerForm.controls.terms.errors">
+                                <small class="text-danger" *ngIf="registerForm.controls.terms.errors.required">You must accept the terms</small>
+                            </div>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </div>
+                        <div class="text-center mt-3">
+                            <p>Already have an account? <a [routerLink]="['/login']">Login Now</a></p>
+                            <p><a [routerLink]="['/admin']">admin</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+
+<!-- ======= Registration Section ======= -->
+ <section id="register" class="register d-flex align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="register-form bg-light p-4">
+                    <h2 class="text-center mb-4">Registration</h2>
+                    <form [formGroup]="registerForm">
+                        <div class="mb-3 mt-4">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text"for class="form-control" id="name" formControlName="name" placeholder="Enter your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email"  formControlName="email" placeholder="Enter a valid email address">
+                            <div class="text-danger" *ngIf="registerForm.controls['email'].invalid && (registerForm.controls['email'].touched || registerForm.controls['email'].dirty)">
+                                <span *ngIf="registerForm.controls['email'].errors?.['required']">* Email ID is required</span>
+                                <span *ngIf="registerForm.controls['email'].errors?.['email']">* Enter Correct Email ID</span>
+                              </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="text" class="form-control" id="password" formControlName="password"  placeholder="Password">
+                            <div class="text-danger" *ngIf="registerForm.controls['password'].invalid && (registerForm.controls['password'].touched || registerForm.controls['password'].dirty)">
+                                <span *ngIf="registerForm.controls['password'].errors?.['required']">* This is required</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="mobile"  formControlName="mobile" placeholder="Enter your phone">
+                            <div class="text-danger" *ngIf="registerForm.controls['mobile'].invalid && (registerForm.controls['password'].touched || registerForm.controls['password'].dirty)">
+                                <span *ngIf="registerForm.controls['mobile'].errors?.['required']">* Enter a Mobile No</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="adhar" class="form-label">Adhar Card</label>
+                            <input type="text" class="form-control" id="adharno"   formControlName="adharno" placeholder="Enter your Adhar No">
+                            <div class="text-danger" *ngIf="registerForm.controls['adharno'].invalid && (registerForm.controls['adharno'].touched || registerForm.controls['adharno'].dirty)">
+                                <span *ngIf="registerForm.controls['adharno'].errors?.['required']">* Adharcard No is required</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pancard" class="form-label">Pancard No</label>
+            
+                            <input type="text" class="form-control" id="pancardno"  formControlName="pancardno" placeholder="Enter your Pan No">
+                            <div class="text-danger" *ngIf="registerForm.controls['pancardno'].invalid && (registerForm.controls['pancardno'].touched || registerForm.controls['pancardno'].dirty)">
+                                <span *ngIf="registerForm.controls['pancardno'].errors?.['required']">* Pancard No is required</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="file" class="form-label">File</label>
+                            <input type="file" class="form-control" id="file" formControlName="image"  accept=".jpg,.png,.pdf">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="terms">
+                            <label class="form-check-label" for="terms">I accept the Terms of Service</label>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-block" (click)="save()">Submit</button>
+                        </div>
+                        <div class="text-center mt-3">
+                            <p>Already have an account? <a href="#" routerLink="/login">Login Now</a></p>
+                            <p><a href="#" routerLink="/admin">admin</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+<!-- End Registration Section -->

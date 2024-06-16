@@ -1,0 +1,172 @@
+<!-- ======= Breadcrumbs ======= -->
+<div class="breadcrumbs d-flex align-items-center" style="background-image: url('https://archipreneur.com/wp-content/uploads/2019/01/office_design-1090x690.jpg');">
+<div class="container position-relative d-flex flex-column align-items-center">
+    <h2> Employee Dashboard</h2>
+</div>
+</div><!-- End Breadcrumbs -->
+
+<!-- ======= side Section ======= -->
+<div class="wrapper">
+   <div class="sidebar">
+    <div>
+        <h3>Profile</h3>
+        <img src="assets/img/team/team-1.jpg" alt="" class="img-fluid">
+    </div>
+    <ul>
+        <li><a href="#" routerLink="/employee"><i class="fas fa-user"></i>Profile</a></li>
+        <li>
+            <a><i class="fas fa-address-card"></i>Insurance</a>
+            <ul>
+                <li><a href="#" routerLink="/life-insurance">Life Insurance</a></li>
+                <li><a href="#" routerLink="/health-insurance">Health Insurance</a></li>
+                <li><a href="#"routerLink="/general-insurance" >General Insurance</a></li>
+            
+            </ul>
+        </li>
+        <li><a href="#"><i class="fas fa-th-large"></i>CRM</a></li>
+        <li><a href="#" class="logout" routerLink="/login"><i class="fas fa-sign-out-alt"></i><span class="nav-item">Logout</span></a></li>
+    </ul>
+  </div>
+<div class="main-container container">
+    <div class="profile-details">
+        <div class="card">
+            <div class="card-body pt-1">
+                <!-- Bordered Tabs -->
+                <ul class="nav nav-tabs nav-tabs-bordered">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-bs-toggle="tab"
+                            data-bs-target="#profile-overview">Overview</button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab"
+                            data-bs-target="#profile-change-password">Change
+                            Password</button>
+                    </li>
+                </ul>
+                <div class="tab-content pt-2">
+
+                    <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                        <h5 class="card-title text-center">Profile Details</h5>
+                        
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 label">Full Name</div>
+                            <div class="col-lg-9 col-md-8">Kevin Anderson</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 label">Company</div>
+                            <div class="col-lg-9 col-md-8">Lueilwitz, Wisoky and Leuschke</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 label">Job</div>
+                            <div class="col-lg-9 col-md-8">Web Designer</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 label">Country</div>
+                            <div class="col-lg-9 col-md-8">USA</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 label">Address</div>
+                            <div class="col-lg-9 col-md-8">A108 Adam Street, New York, NY 535022</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 label">Phone</div>
+                            <div class="col-lg-9 col-md-8">(436) 486-3538 x29071</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 label">Email</div>
+                            <div class="col-lg-9 col-md-8">k.andersonxample.com</div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade pt-3" id="profile-change-password">
+                        <!-- Change Password Form -->
+                        <form>
+                            <div class="row mb-3">
+
+                                <label for="currentPassword" class="col-md-7 col-lg-3 col-form-label">Current
+                                    Password</label>
+                                <div class="col-md-8 col-lg-9">
+                                    <input name="password" type="password" class="form-control"
+                                        id="currentPassword">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">New
+                                    Password</label>
+                                <div class="col-md-8 col-lg-9">
+                                    <input name="newpassword" type="password" class="form-control"
+                                        id="newPassword">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Re-enter New
+                                    Password</label>
+                                <div class="col-md-8 col-lg-9">
+                                    <input name="renewpassword" type="password" class="form-control"
+                                        id="renewPassword">
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Change Password</button>
+                            </div>
+                        </form><!-- End Change Password Form -->
+
+                    </div>
+                </div><!-- End Bordered Tabs -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 mt-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Lead</h5>
+                        <p class="card-text">Some quick exa mple text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center">
+                        <a href="" routerLink="/lead" class="btn btn-primary">More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 mt-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Prospect</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center">
+                        <a href="#" class="btn btn-primary">More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 mt-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Conversion</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center">
+                        <a href="#" class="btn btn-primary">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<router-outlet></router-outlet>
+

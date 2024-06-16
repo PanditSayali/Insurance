@@ -1,0 +1,55 @@
+<section class="leadform py-5">
+    <div class="container form bg-light p-4">
+        <h2>Enter the Leads</h2>
+        <form [formGroup]="leadform" >
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label for="leadcustomername" class="form-label">Customer Name</label>
+                    <input type="text" id="customerName" name="customerName" class="form-control" formControlName="customerName" placeholder="Enter leads Name" required>
+                        
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label for=" Email ID" class="form-label"> Email ID</label>
+                    <input type="text" id="email" name="email" class="form-control" formControlName="email" placeholder="Enter Email ID" required> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label for="phone" class="form-label">Conatct No</label>
+                    <input type="number" class="form-control" name="contactno" id="contactno" placeholder="Enter your contact no"  formControlName="contactno" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label for="age" class="form-label">Lead Age</label>
+                    <input type="number" class="form-control" id="age" name="age" formControlName ="age" placeholder="Enter lead Age" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label for="Location" class="form-label">Location</label>
+                    <input type="text" class="form-control" name="location" id="location" placeholder="Enter your Location"formControlName ="location" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mb=3">
+                    <label for="insurance" class="form-label">InsuranceType</label>
+                    <select class="form-select" id="insurance" name="insurance" formControlName="insurance" placeholder="Insurance Type">
+                        <!-- <option selected disabled value="">Select InsuranceType</option> -->
+                        <option selected disabled value="" >Select Insurance Type</option>
+                        <option value="health">Health Insurance</option>
+                        <option value="Life">Life Insurance</option>
+                        <option value="General">General Insurance</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" name="leads" class="btn btn-primary" (click)="postleads()">Submit</button>
+        </form>
+    </div>
+</section> 
+
+<!-- End Form Section --> 

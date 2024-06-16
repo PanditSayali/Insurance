@@ -1,0 +1,183 @@
+.contact {
+    background: url("https://biohernia.com/wp-content/uploads/2017/01/world-map-png-35418.png") left top no-repeat;
+    background-size: contain;
+    position: relative;
+    padding: 50px 0;
+  }
+  
+  .contact:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .contact .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact .info-item i {
+    font-size: 20px;
+    background: var(--color-primary);
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+  }
+  
+  .contact .info-item h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1c88ba;
+  }
+  
+  .contact .info-item p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .contact .email-form {
+    width: 100%;
+  }
+  
+  .contact .email-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact .email-form .error-message,
+  .contact .email-form .sent-message,
+  .contact .email-form .loading {
+    display: none;
+    padding: 15px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .contact .email-form .error-message {
+    color: #fff;
+    background: #df1529;
+  }
+  
+  .contact .email-form .sent-message {
+    color: #fff;
+    background: #059652;
+  }
+  
+  .contact .email-form .loading {
+    background: #fff;
+  }
+  
+  .contact .email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #059652;
+    border-top-color: #fff;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  .contact .email-form input,
+  .contact .email-form textarea {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 12px 15px;
+}
+
+.contact .email-form input,
+.contact .email-form textarea
+{
+border-color: var(--color-primary);
+}
+
+.contact .email-form textarea {
+padding: 10px 12px;
+}
+
+.contact .email-form button[type=submit] {
+background: #1f98d1;
+border: 0;
+padding: 12px 40px;
+color: #fff;
+transition: 0.4s;
+}
+
+.text-danger span {
+    font-size: 12px;
+}
+.contact .email-form button[type=submit]
+{
+background: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+.contact .info-item {
+flex-direction: column;
+align-items: flex-start;
+text-align: left;
+}
+
+.contact .info-item i {
+margin-bottom: 10px;
+}
+
+.contact .email-form .form-group {
+margin-bottom: 10px;
+}
+
+.contact .email-form button[type=submit] {
+width: 100%;
+}
+}
+
+@media (max-width: 576px) {
+.contact .info-item h4 {
+font-size: 18px;
+}
+
+.contact .info-item p {
+font-size: 12px;
+}
+
+.contact .email-form input,
+.contact .email-form textarea {
+font-size: 12px;
+padding: 10px 12px;
+}
+
+.contact .email-form button[type=submit] {
+padding: 10px 30px;
+}
+}
+
+@keyframes animate-loading {
+0% {
+transform: rotate(0deg);
+}
+
+100% {
+transform: rotate(360deg);
+}
+}
+.form-control {
+    border: 1px solid #4a7fb4 !important;
+}
+.form-select {
+    border: 1px solid #4a7fb4 !important;
+}
+

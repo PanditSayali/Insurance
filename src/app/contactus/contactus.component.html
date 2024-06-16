@@ -1,0 +1,76 @@
+ <!-- ======= Contact Section ======= -->
+ <section id="contact" class="contact">
+    <div class="container position-relative" data-aos="fade-up">
+
+      <div class="row gy-4 d-flex justify-content-end">
+
+        <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="info-item d-flex">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Location:</h4>
+              <p>A602, 6th Floor, Above Bank of Baroda, Pride Square,<br> Kalewadi Phata, Wakad Pune- 411057 <br><br></p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email:</h4>
+              <p>info.example.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex">
+            <i class="fa-solid fa-phone-volume"></i>
+            <div>
+              <h4>Call:</h4>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+
+          <form  [formGroup]= "contactform" class="email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="contactname" name="contactname" class="form-control" id="contactname" placeholder="Your Name" formControlName="contactname">
+              <div class="text-danger" *ngIf="contactform.controls['contactname'].invalid && (contactform.controls['contactname'].touched || contactform.controls['contactname'].dirty || isFormSubmitted)">
+                <span *ngIf="contactform.controls['contactname'].errors?.['required']">* This is required</span>
+              </div>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="contactemail" class="form-control" name="contactemail" id="contactemail" placeholder="Your Email" formControlName="contactemail">
+                <div class="text-danger" *ngIf="contactform.controls['contactemail'].invalid && ( contactform.controls['contactemail'].touched || contactform.controls['contactemail'].dirty || isFormSubmitted)">
+                  <span *ngIf="contactform.controls['contactemail'].errors?.['required']">*This is required</span>
+                  <span *ngIf="contactform.controls['contactemail'].errors?.['email']">*Email id should be correct!!</span>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="contactsubject" class="form-control" name="contactsubject" id="contactsubject" placeholder="Subject" formControlName="contactsubject">
+              <div class="text-danger" *ngIf="contactform.controls['contactsubject'].invalid && (contactform.controls['contactsubject'].touched || contactform.controls['contactsubject'].dirty || isFormSubmitted)">
+                <span *ngIf="contactform.controls['contactsubject'].errors?.['required']">* This is required</span>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <textarea  type="contactmsg "  class="form-control"  id ="contactmsg" name="contactmsg" rows="5" placeholder="Message" formControlName="contactmsg"></textarea>
+              <div class="text-danger" *ngIf="contactform.controls['contactmsg'].invalid && (contactform.controls['contactmsg'].touched || contactform.controls['contactmsg'].dirty || isFormSubmitted)">
+                <span *ngIf="contactform.controls['contactmsg'].errors?.['required']">* This is required</span>
+              </div>
+            </div>
+            <div class="text-center">
+             
+              <button  name= "contact"  type="submit" (click)="postcontact()">Send Message</button></div>
+          </form>
+
+        </div><!-- End Contact Form -->
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
