@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { AbstractControl, FormGroup, ValidatorFn } from '@angular/forms';
 import { Observable } from 'rxjs';
 
-const baseURL ="http://localhost:9191/Insurance/";
+const baseURL = "http://localhost:9191/Insurance/";
 const leadURL = "http://localhost:9191/leads/";
 
 @Injectable({
@@ -12,8 +12,12 @@ const leadURL = "http://localhost:9191/leads/";
 
 export class InsuranceserviceService {
   
-  // baseUrl: any;
+
   
+
+  
+  // baseUrl: any;
+
 
   // addCustomer(customer: any): Observable<any> {
   //   return this.http.post<any>(`${this.baseUrl}/users/addDetails`, customer);
@@ -96,7 +100,7 @@ export class InsuranceserviceService {
     console.log('service running...');
   }
 
-  
+
   //Metthod for register
   postRegisterFromService(register: any): Observable<any> {
     return this.http.post(baseURL + 'addemp', register);
@@ -111,24 +115,29 @@ export class InsuranceserviceService {
   // Method for contact US
   postContactFromService(contact: any): Observable<any> {
     return this.http.post(baseURL + 'contactsadd', contact);
-    
   }
 
   // Methods for Lead
   postLeadFromService(clientlead: any): Observable<any> {
-   
+
     return this.http.post(leadURL + 'leadadd', clientlead);
   }
 
-  getLeadFromService()
-  {
+  getLeadFromService() {
     return this.http.get(leadURL + 'getAlllead');
   }
-  
-  // gethealthleadfromService(insurance:health) {
-  //   return this.http.get(leadURL + 'getbyinsurance', { params: { type: insuranceType } });
-  // }
-  gethealthleadfromService(insurance: string): Observable<any[]> {
-    return this.http.get<any[]>(leadURL + 'getbyinsurance', { params: { type: insurance } });
+
+
+  getHealthInsuranceLeads() {
+    return this.http.get(leadURL +'getbyinsurance?insurance=health');
   }
+
+  getLifeInsuranceLeads() {
+    return this.http.get(leadURL +'getbyinsurance?insurance=life');
+  }
+
+  getGeneralInsuranceLeads() {
+    return this.http.get(leadURL +'getbyinsurance?insurance=general');
+  }
+  
 }

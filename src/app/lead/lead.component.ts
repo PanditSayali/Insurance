@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { InsuranceserviceService } from '../insuranceservice.service';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule, JsonPipe, NgFor } from '@angular/common';
@@ -22,7 +22,8 @@ export class LeadComponent {
   constructor(
     private serviceClass: InsuranceserviceService,
     private formbuilder: FormBuilder,
-    private http: HttpClient
+    private http: HttpClient,
+    private router: Router,
   ) {
     this.getlead();
   }
@@ -42,17 +43,23 @@ export class LeadComponent {
 
   postleads() {
     if (this.leadform.valid) {
-    this.serviceClass.postLeadFromService(this.leadform.value).subscribe((res: any) => {
-      console.log(res);
-    });
-    alert("Lead Enter Sucessfully");
+      this.serviceClass.postLeadFromService(this.leadform.value).subscribe((res: any) => {
+        console.log(res);
+      });
+      alert('Lead Entered Successfully');
+    }
   }
-}
 
 
   getlead() {
     this.serviceClass.getLeadFromService().subscribe((res) => {
       this.clientlead = res;
+    });
+  }
+
+  getHealthLeads(): void {
+    this.serviceClass.getHealthInsuranceLeads().subscribe((res) => {
+      this.clientlead= res;
     });
   }
 }

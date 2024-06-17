@@ -30,6 +30,7 @@ export const routes: Routes = [
     {path:'life-insurance',component:LifeInsuranceComponent},
     {path:'health-insurance',component:HealthInsuranceComponent},
     {path:'general-insurance',component:GeneralInsuranceComponent},
+    { path: '', redirectTo: '/lead', pathMatch: 'full' }
 
 ];
 

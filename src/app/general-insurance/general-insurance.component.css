@@ -1,74 +1,205 @@
 .wrapper {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-  }
-  
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    background: var(--color-secondary);
-    color: white;
-    padding: 20px;
-  }
-  
-  .sidebar h3 {
-    margin-top: 0;
-    text-align: center;
-  }
-  
-  .sidebar img {
-    display: block;
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
 }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background: var(--color-secondary);
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.sidebar img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 50px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 20px;
+  transition: color 0.1s ease-in-out 0s, background-color 0.1s ease-in-out 0s;
+  border: 1px solid inherit;
+}
+
+.sidebar ul li a i {
+  margin-right: 40px;
+}
+
+.sidebar ul li ul {
+  display: none;
+  margin-left: 40px;
+}
+
+.sidebar ul li:hover ul {
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background-color:white;
+  color: var(--color-secondary);
+}
+
+.sidebar .logout {
+  margin-top: auto;
+}
+
   
-  .sidebar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  
-  .sidebar ul li {
-    margin-bottom: 10px;
-  }
-  
-  .sidebar ul li a {
-    display: flex;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-    font-size: 20px;
-    transition: color 0.1s ease-in-out 0s, background-color 0.1s ease-in-out 0s;
-    border: 1px solid inherit;
-  }
-  
-  .sidebar ul li a i {
-    margin-right: 40px;
-  }
-  
-  .sidebar ul li ul {
-    display: none;
-    margin-left: 40px;
-  }
-  
-  .sidebar ul li:hover ul {
-    display: block;
-  }
-  
-  .sidebar ul li a:hover {
-    background-color:white;
-    color: var(--color-secondary);
-  }
-  
-  .sidebar .logout {
-    margin-top: auto;
-  }
+.leadTable {
+  margin-top: 10px;
+  margin-left: 60px;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+ 
+.leadTable h2 {
+  text-align: center;
+}
+
+/* .leadTable li{
+
+} */
+.leadTable .table td a i {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 18px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+#box{
+  height: 400px;
+  width: 900px;
+  margin-left: 20px;
+/* border: 1px solid  black; */
+overflow-y: scroll;
+}
+/* Style the envelope icon */
+.leadTable .table td a i.fas.fa-envelope {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Style the phone icon */
+.leadTable .table td a i.fas.fa-phone {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+/* Style the WhatsApp icon */
+.leadTable .table td a i.fab.fa-whatsapp {
+  background-color: #25d366;
+  color: #fff;
+}
+
+.leadTable button {
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #2aa5df;
+}
+
+.leadTable button:hover {
+  background: #2aa5df;
+  color: #fff;
+  transition: 0.5rem;
+}
+
+.Prospecttable {
+  margin-top: 10px;
+  margin-left: 30px;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+.Prospecttable{
+margin-top: 2rem;
+
+}
+
+.Prospecttable th {
+border-bottom: 1px solid #ddd;
+padding-bottom: 0.5rem;
+}
+
+.Prospecttable td {
+padding: 0.5rem;
+vertical-align: middle;
+}
+
+.Prospecttable input[type="checkbox"] {
+margin-right: 0.5rem;
+}
+
+.Prospecttable label {
+display: inline-block;
+margin-bottom: 0.2rem;
+}
+
+.datatable th,
+.datatable td {
+border: none;
+padding: 0.5rem;
+}
+
+.datatable th {
+background-color: #f2f2f2;
+font-weight: bold;
+}
+
+.datatable tbody tr:nth-child(even) {
+background-color: #f9f9f9;
+}
+
+.datatable tbody tr:hover {
+background-color: #f5f5f5;
+}
+
+.action-checkboxes {
+display: flex;
+align-items: center;
+}
+
+.conversiontable {
+margin-top: 10px;
+margin-left: 30px;
+border-collapse: collapse;
+width: 100%;
+
+}
+.conversiontable .bg-success a {
+color: #fff;
+}

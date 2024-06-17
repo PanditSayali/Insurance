@@ -24,4 +24,49 @@
             <li><a href="#" class="logout" routerLink="/login"><i class="fas fa-sign-out-alt"></i><span class="nav-item">Logout</span></a></li>
         </ul>
       </div>
+      <!--  Lead Table -->
+    <div class="leadTable">
+        <div class="col-9">
+            <div class="card leadTable" id="box">
+
+                <div class="card-body">
+                    <h2 class="card-title">Lead table</h2>
+                    <table class="table table-borderless datatable">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Customer Name</th>
+                                <th scope="col">Contact No</th>
+                                <th scope="col">Age</th>
+                                <th scope="col">Insurance</th>
+                                <th scope="col">Location</th>
+                                <th scope="col">Contact Through</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let lead of clientlead">
+                                <td>{{lead.id}}</td>
+                                <td>{{lead.customerName}}</td>
+                                <td><a href="tel:{{lead.contactno}}" class="text-primary">{{lead.contactno}}</a>
+                                </td>
+                                <td>{{lead.age}}</td>
+                                <td>{{lead.insurance}}</td>
+                                <td>{{lead.location}}</td>
+                                <td>
+                                    <a href="mailto:{{lead.email}}"><i class="fas fa-envelope"></i></a>
+                                    <a href="tel:{{lead.contactno}}"><i class="fas fa-phone"></i></a>
+                                    <a href="https://wa.me/{{lead.contactno}}" target="_blank"><i
+                                            class="fab fa-whatsapp"></i></a>
+                                </td>
+                                <td><button> Add <i class="fa-solid fa-user-plus"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div><!-- End lead table-->
     </div>
+
+
+    

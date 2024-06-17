@@ -31,11 +31,11 @@ export class AdminComponent {
   }
     
 
-  gethealthlead(){
-    this .serviceClass.gethealthleadfromService('health').subscribe(
-      (res)=>{
-      this.clientlead = res;
-  });
-}
+//   gethealthlead(){
+//     this .serviceClass.gethealthleadfromService('health').subscribe(
+//       (res)=>{
+//       this.clientlead = res;
+//   });
+// }
 }
 
